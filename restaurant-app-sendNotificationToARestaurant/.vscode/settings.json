@@ -1,0 +1,17 @@
+{
+  "emmet.showSuggestionsAsSnippets": true,
+  "emmet.triggerExpansionOnTab": true,
+  "editor.fontFamily": "Fira Code",
+  "editor.fontLigatures": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.fixAll.format": true
+  },
+  "bloop.openOnSuggestionsAvailable": false,
+  "[dart]": {
+    "editor.defaultFormatter": "Dart-Code.dart-code"
+  }
+}
