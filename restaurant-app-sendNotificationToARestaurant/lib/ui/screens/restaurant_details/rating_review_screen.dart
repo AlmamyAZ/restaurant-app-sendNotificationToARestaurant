@@ -85,7 +85,7 @@ class RatingReviewScreen extends StatelessWidget {
                 context: context,
                 builder: (BuildContext context) {
                   return AlertDialog(
-                    title: Text("Voulez vous quitter ?"),
+                    title: Text("Voulez-vous quitter ?"),
                     content: Text("Toutes vos modifications seront supprimées"),
                     actions: [
                       TextButton(
@@ -135,7 +135,7 @@ class RatingReviewScreen extends StatelessWidget {
                 verticalSpaceSmall,
                 Divider(), //
                 Text(
-                  'Donnez une note',
+                  'Donner une note',
                   style: TextStyle(
                     fontSize: 18,
                     fontWeight: FontWeight.bold,
@@ -179,7 +179,7 @@ class RatingReviewScreen extends StatelessWidget {
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Text(
-                        'Ajouter des photos',
+                        'Ajouter une photo',
                         style: TextStyle(
                           fontSize: 18,
                           fontWeight: FontWeight.bold,
@@ -192,8 +192,8 @@ class RatingReviewScreen extends StatelessWidget {
                           if (numberOfpicture != null) {
                             if (numberOfpicture >= 3) {
                               model.showSnacbar(
-                                'limit images',
-                                'vous avez atteint le nombre maximum d\'images',
+                                "limite d'images",
+                                "vous avez atteint le nombre maximum d'images",
                               );
                               return;
                             }
@@ -237,7 +237,7 @@ class ChipList extends ViewModelWidget<RateReviewViewModel> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'A propos de quoi',
+            'À propos de ',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
           Container(
@@ -252,7 +252,7 @@ class ChipList extends ViewModelWidget<RateReviewViewModel> {
                   idx: 0,
                 ),
                 FilterElement(
-                  label: 'Etablissement',
+                  label: 'Établissement',
                   setIndexHandler: model.setSelectedIndex,
                   selectedIndex: model.selectedIndex,
                   idx: 1,

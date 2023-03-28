@@ -55,10 +55,10 @@ var dishs = [
   {
     "id": "c0938ccmkk39c9c",
     "foodGenericId": "pizza",
-    "name": "pizza vegetarien",
+    "name": "pizza végétarienne",
     "likerCount": 12,
     "speciality": "français",
-    "description": "francais fracais pizza vegetarien pour votre bien etre ",
+    "description": "français français pizza végétarienne pour votre bien-être ",
     "ingredients": "tomate , farine ,....",
     "createdAt": DateTime.utc(2020, 03, 3),
     "imgUrl": ""
@@ -66,10 +66,10 @@ var dishs = [
   {
     "id": "9xo38ccmkk39c9c",
     "foodGenericId": "pizza",
-    "name": "pizza vegetarien",
+    "name": "pizza végétarienne",
     "likerCount": 12,
     "speciality": "français",
-    "description": "francais fracais pizza vegetarien pour votre bien etre ",
+    "description": "français français pizza végétarienne pour votre bien-être ",
     "ingredients": "tomate , farine ,....",
     "createdAt": DateTime.utc(2020, 03, 3),
     "imgUrl": ""

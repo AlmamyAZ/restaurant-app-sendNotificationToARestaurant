@@ -128,7 +128,7 @@ class SignupProcessViewModel extends BaseViewModel {
       else if (e.code == 'session-expired')
         snackbarService.showSnackbar(
             message:
-                'le code sms a expiré. Merci de renvoyer un nouveau code et reesayer.');
+                'le code sms a expiré. Merci de renvoyer un nouveau code et réessayer.');
       else
         snackbarService.showSnackbar(message: e.toString());
 

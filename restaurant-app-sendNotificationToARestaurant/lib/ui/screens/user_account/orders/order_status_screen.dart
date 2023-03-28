@@ -152,7 +152,7 @@ class MapPreview extends StatelessWidget {
                       ),
               verticalSpaceMedium,
               Text(
-                'Recapitulatif de la commande',
+                'Récapitulatif de la commande',
                 style: TextStyle(
                     fontSize: 15,
                     fontWeight: FontWeight.w600,

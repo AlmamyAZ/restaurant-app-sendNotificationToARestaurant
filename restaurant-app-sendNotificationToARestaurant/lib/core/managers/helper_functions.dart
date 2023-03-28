@@ -260,11 +260,11 @@ Map<String, dynamic>? formatOrderStatus(OrderStatus status) {
     case OrderStatus.completed:
       return {'label': 'Commande terminée', 'color': Colors.greenAccent};
     case OrderStatus.processingByRestaurant:
-      return {'label': 'En cour de préparation', 'color': Colors.orangeAccent};
+      return {'label': 'En cours de préparation', 'color': Colors.orangeAccent};
     case OrderStatus.delivering:
       return {'label': 'En cours de livraison', 'color': Colors.orangeAccent};
     case OrderStatus.waitingForPickup:
-      return {'label': 'Près pour récupération', 'color': Colors.orangeAccent};
+      return {'label': 'Prête pour récupération', 'color': Colors.orangeAccent};
   }
 }
 

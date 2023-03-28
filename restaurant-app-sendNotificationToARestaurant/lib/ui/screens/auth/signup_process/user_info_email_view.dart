@@ -53,7 +53,7 @@ class UserInfoEmailView extends StatelessWidget {
                     ),
                     verticalSpaceMedium,
                     InputField(
-                      placeholder: 'votre addresse email',
+                      placeholder: 'votre adresse email',
                       controller: model.emailController,
                       validator: emailValidator,
                       fieldFocusNode: emailFocusNode,

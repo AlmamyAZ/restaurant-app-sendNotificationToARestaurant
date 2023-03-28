@@ -126,7 +126,7 @@ class AdressFormScreen extends StatelessWidget {
                     ),
                     verticalSpaceSmall,
                     InputField(
-                        placeholder: 'Autre indications...',
+                        placeholder: 'Autre indication...',
                         controller: model.descriptionController,
                         fieldFocusNode: moreDetailsFocusNode,
                         nextFocusNode: phoneFocusNode,
@@ -134,7 +134,7 @@ class AdressFormScreen extends StatelessWidget {
                     verticalSpaceSmall,
                     InputField(
                         label: 'Mobile',
-                        placeholder: ' Votre numero de telephone',
+                        placeholder: ' Votre numéro de téléphone',
                         prefix: '+224 ',
                         controller: model.phoneController,
                         validator: phoneValidator,

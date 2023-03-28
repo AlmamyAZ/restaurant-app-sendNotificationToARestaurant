@@ -22,7 +22,7 @@ class PasswordRecoveryView extends StatelessWidget {
           appBar: AppBar(
             elevation: 0,
             title: Text(
-              'Recuperation de mot de passe',
+              'Récupération de mot de passe',
               style: Theme.of(context).appBarTheme.toolbarTextStyle,
             ),
           ),
@@ -54,7 +54,7 @@ class PasswordRecoveryView extends StatelessWidget {
                     ),
                     verticalSpaceMedium,
                     InputField(
-                      placeholder: 'Email du compte à recuperer',
+                      placeholder: 'Email du compte à récuperer',
                       controller: model.emailController,
                       validator: emailValidator,
                       enterPressed: () {

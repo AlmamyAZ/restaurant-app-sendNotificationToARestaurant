@@ -30,7 +30,7 @@ class UserInfoMobileView extends StatelessWidget {
               child: Scaffold(
                   appBar: AppBar(
                     title: Text(
-                      'Numero de téléphone',
+                      'Numéro de téléphone',
                       style: Theme.of(context).appBarTheme.toolbarTextStyle,
                     ),
                   ),
@@ -48,7 +48,7 @@ class UserInfoMobileView extends StatelessWidget {
                           children: <Widget>[
                             verticalSpaceMedium,
                             Text(
-                              'Entrez votre numero de telephone',
+                              'Entrez votre numéro de téléphone',
                               style: TextStyle(
                                 fontSize: 20,
                                 fontWeight: FontWeight.w500,
@@ -56,7 +56,7 @@ class UserInfoMobileView extends StatelessWidget {
                             ),
                             verticalSpaceMedium,
                             InputField(
-                              placeholder: ' Votre numero de telephone',
+                              placeholder: ' Votre numéro de téléphone',
                               prefix: '+224 ',
                               textInputType: TextInputType.phone,
                               formatters: [phoneNumberMaskFormatter],

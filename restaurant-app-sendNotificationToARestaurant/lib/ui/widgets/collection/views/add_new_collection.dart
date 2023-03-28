@@ -47,7 +47,7 @@ class AddNewCollection extends StatelessWidget {
                 child: InputField(
                   controller: model.collectionName,
                   validator: codeValidator,
-                  placeholder: 'Nommez votre collection',
+                  placeholder: 'Nommer votre collection',
                 ),
               ),
             ),

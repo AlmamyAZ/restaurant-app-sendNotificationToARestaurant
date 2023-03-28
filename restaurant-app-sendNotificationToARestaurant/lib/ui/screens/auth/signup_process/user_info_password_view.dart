@@ -25,7 +25,7 @@ class UserInfoPasswordView extends StatelessWidget {
       disposeViewModel: false,
       builder: (context, model, child) => BusyOverlay(
         show: model.isBusy, // make the model busy after create account
-        title: 'Creation de votre compte...',
+        title: 'Création de votre compte...',
         child: Scaffold(
             appBar: AppBar(
               title: Text(

@@ -99,7 +99,7 @@ class AdressesViewModel extends StreamViewModel<List<Adress?>> {
 
     navigationService.back(result: {
       'active': true,
-      'message': 'Votre adresse a été créée avec succees'
+      'message': 'Votre adresse a été créée avec succès'
     });
   }
 
@@ -134,7 +134,7 @@ class AdressesViewModel extends StreamViewModel<List<Adress?>> {
     _editMode = false;
     setBusy(false);
     snackbarService.showSnackbar(
-      message: 'Vos modifications on été sauvegardé avec succees',
+      message: 'Vos modifications ont été sauvegardés avec succès',
     );
   }
 
@@ -142,7 +142,7 @@ class AdressesViewModel extends StreamViewModel<List<Adress?>> {
     DialogResponse? response = await dialogService.showDialog(
         title: 'Supression d\'adresse',
         description:
-            'Cette adresse seras suprime de maniere definitive. Voulez vous continuer ?',
+            'Cette adresse sera définitivement supprimée. Voulez-vous continuer ?',
         cancelTitle: 'Annuler',
         cancelTitleColor: Colors.red,
         buttonTitle: 'Oui');
@@ -154,7 +154,7 @@ class AdressesViewModel extends StreamViewModel<List<Adress?>> {
     setBusy(false);
     navigationService.back(result: {
       'active': true,
-      'message': 'Votre adresse a été suprimée avec succees'
+      'message': 'Votre adresse a été supprimée avec succès !'
     });
   }
 

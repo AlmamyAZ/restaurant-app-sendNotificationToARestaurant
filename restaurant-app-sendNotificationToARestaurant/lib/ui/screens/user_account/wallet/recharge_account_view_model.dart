@@ -72,7 +72,7 @@ class RechargeAccountViewModel extends BaseViewModel {
           duration: const Duration(seconds: 5),
           variant: SnackbarType.warning,
           title: "Faites un choix",
-          message: "Veuillez choisir une methode de paiement ",
+          message: "Veuillez choisir une méthode de paiement ",
         );
         return;
       }
@@ -105,7 +105,7 @@ class RechargeAccountViewModel extends BaseViewModel {
       message: message == null
           ? isSuccess
               ? 'Votre paiement a été effectué'
-              : 'Echec du paiement vueillez réessayer'
+              : 'Echec du paiement veuillez réessayer'
           : message,
     );
   }

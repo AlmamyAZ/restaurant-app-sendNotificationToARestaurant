@@ -57,7 +57,7 @@ class _GalleryReviewBottomSheetState extends State<GalleryReviewBottomSheet> {
               DialogResponse? response = await dialogService.showDialog(
                   title: 'Supression de photo',
                   description:
-                      'Cette photo seras suprime de maniere definitive. Voulez vous continuer ?',
+                      'Cette photo sera définitivement supprimée. Voulez-vous continuer ?',
                   cancelTitle: 'Annuler',
                   cancelTitleColor: Colors.red,
                   buttonTitle: 'Oui');

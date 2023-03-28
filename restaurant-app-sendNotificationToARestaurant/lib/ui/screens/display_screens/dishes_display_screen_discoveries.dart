@@ -13,7 +13,7 @@ class DishesDisplayScreenDiscoveries extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
         appBar: AppBar(
           title: Text(
-            'Espace decouverte',
+            'Espace Découverte',
             style: Theme.of(context).appBarTheme.toolbarTextStyle,
           ),
         ),

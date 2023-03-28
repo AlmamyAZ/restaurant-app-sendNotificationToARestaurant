@@ -107,7 +107,7 @@ class ProfileView extends StatelessWidget {
                     ),
                     verticalSpaceLarge,
                     InputField(
-                        placeholder: 'Prenom',
+                        placeholder: 'Prénom',
                         controller: model.firstnameController,
                         autofocus: model.editMode,
                         fieldFocusNode: firstnameFocusNode,
@@ -130,7 +130,7 @@ class ProfileView extends StatelessWidget {
                     verticalSpaceSmall,
                     InputField(
                       label: 'Mobile',
-                      placeholder: ' Votre numero de telephone',
+                      placeholder: ' Votre numéro de téléphone',
                       prefix: '+224 ',
                       controller: model.phoneController,
                       fieldFocusNode: mobileFocusNode,

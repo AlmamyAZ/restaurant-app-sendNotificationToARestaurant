@@ -22,7 +22,7 @@ class AdressMapSelectionScreen extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
         appBar: AppBar(
           title: Text(
-            'Selectionner votre adresse',
+            'Selectionnez votre adresse',
             style: Theme.of(context).appBarTheme.toolbarTextStyle,
           ),
         ),

@@ -19,7 +19,7 @@ class PhotoManagementViewModel extends BaseViewModel {
 
   PhotoModel _photoModel = locator<PhotoModel>();
 
-  List subjet = ['Menu', 'Etablissement', 'Nourriture'];
+  List subjet = ['Menu', 'Établissement', 'Nourriture'];
 
   int _selectedIndex = 0;
   int get selectedIndex => _selectedIndex;
@@ -46,7 +46,7 @@ class PhotoManagementViewModel extends BaseViewModel {
   }) async {
     if (!isImageValid) {
       snackbarService.showSnackbar(
-        message: 'L\'image depasse 3MB, veuillez choisir une autre image',
+        message: "L'image dépasse 3MB, veuillez choisir une autre image",
         title: 'Erreur',
       );
       return;
@@ -97,7 +97,7 @@ class PhotoManagementViewModel extends BaseViewModel {
 
     navigationService.back();
     snackbarService.showSnackbar(
-      message: 'l\'image a eté bien ajouté',
+      message: "l'image a bien été ajouté",
       title: 'Succès',
     );
   }
