@@ -32,7 +32,6 @@ class AuthViewModel extends BaseViewModel {
       print("result 😂😂😂😂 : $result");
 
       if (!authenticationService.isEmailVerified()) {
-
         await authenticationService.logOut();
         navigationService.clearTillFirstAndShow(Routes.emailValidationView);
         return;
@@ -55,7 +54,7 @@ class AuthViewModel extends BaseViewModel {
       snackbarService.showSnackbar(
           message:
               'Adresse mail ou mot de passe incorrect !', //getErrorMessageFromFirebaseException(e as FirebaseException),
-          title: 'Echec de connection');
+          title: 'Echec de connexion');
       setBusy(false);
     }
   }
@@ -115,8 +114,8 @@ class AuthViewModel extends BaseViewModel {
       print(e);
       snackbarService.showSnackbar(
         message:
-            'Votre connection au serveur a échoué !', //getErrorMessageFromFirebaseException(e),
-        title: 'Echec de connection ',
+            'Votre connexion au serveur a échoué !', //getErrorMessageFromFirebaseException(e),
+        title: 'Echec de connexion ',
       );
       setBusy(false);
     }
@@ -145,7 +144,7 @@ class AuthViewModel extends BaseViewModel {
         snackbarService.showSnackbar(
             title: 'Email de recuperation envoyé',
             message:
-                'Consulter votre email pour continuer la procedure de recuperation de votre mot de passe.');
+                'Consultez votre email pour continuer la procédure de récuperation de votre mot de passe.');
     });
   }
 

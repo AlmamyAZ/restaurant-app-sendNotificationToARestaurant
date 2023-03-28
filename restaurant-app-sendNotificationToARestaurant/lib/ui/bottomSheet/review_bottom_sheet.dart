@@ -80,9 +80,9 @@ class _ReviewBottomSheetState extends State<ReviewBottomSheet> {
                     onTap: () async {
                       if (busy) return;
                       DialogResponse? response = await dialogService.showDialog(
-                        title: 'Supression du review',
+                        title: "Supression de l'avis",
                         description:
-                            'la suppression du review sera de maniere definitive. Voulez vous continuer ?',
+                            "la suppression de l'avis sera définitive. Voulez-vous continuer ?",
                         cancelTitle: 'Annuler',
                         cancelTitleColor: Colors.red,
                         buttonTitle: 'Oui',

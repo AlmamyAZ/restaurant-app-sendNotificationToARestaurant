@@ -45,7 +45,7 @@ class SearchBar extends StatelessWidget {
             textInputAction: TextInputAction.search,
             style: TextStyle(fontWeight: FontWeight.w500),
             decoration: InputDecoration(
-                hintText: "Trouver un resto...",
+                hintText: "Trouver un plat ou un resto...",
                 hintStyle: TextStyle(
                   fontWeight: FontWeight.w500,
                   fontSize: 17 / scaleValue,
@@ -83,7 +83,7 @@ class SearchBarDelegate extends SearchDelegate<String> {
   }
 
   @override
-  String? get searchFieldLabel => 'Rechercher un plat';
+  String? get searchFieldLabel => 'Rechercher';
 
   @override
   TextStyle? get searchFieldStyle => TextStyle(

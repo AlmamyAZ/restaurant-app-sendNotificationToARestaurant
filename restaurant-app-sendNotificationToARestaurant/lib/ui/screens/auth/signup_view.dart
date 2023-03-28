@@ -45,7 +45,7 @@ class SignUpView extends StatelessWidget {
       },
       builder: (context, model, child) => BusyOverlay(
         show: model.busy(model.socialProfileLoading),
-        title: 'Profile en cours de chargement...',
+        title: 'Profil en cours de chargement...',
         child: Scaffold(
             appBar: AppBar(
               automaticallyImplyLeading: false,
@@ -70,7 +70,7 @@ class SignUpView extends StatelessWidget {
                           FontAwesomeIcons.facebook,
                           color: Colors.white,
                         ),
-                        title: "Continuer avec Facebook",
+                        title: "Continuez avec Facebook",
                         textColor: Colors.white,
                         width: screenWidth(context),
                         onPress: () {
@@ -80,7 +80,7 @@ class SignUpView extends StatelessWidget {
                       ),
                       verticalSpaceSmall,
                       FullFlatButton(
-                        title: "Continuer avec Google",
+                        title: "Continuez avec Google",
                         textColor: Colors.black,
                         width: screenWidth(context),
                         svgPath: 'assets/images/logo_icons/google_logo.png',
@@ -98,7 +98,7 @@ class SignUpView extends StatelessWidget {
                             FontAwesomeIcons.apple,
                             color: Colors.white,
                           ),
-                          title: "Continuer avec Apple",
+                          title: "Continuez avec Apple",
                           textColor: Colors.white,
                           width: screenWidth(context),
                           onPress: () {},
@@ -126,7 +126,7 @@ class SignUpView extends StatelessWidget {
                           Icons.mail,
                           color: Colors.white,
                         ),
-                        title: "Continuer avec Email",
+                        title: "Continuez avec votre Email",
                         textColor: Colors.white,
                         width: screenWidth(context),
                         onPress: () {
@@ -144,13 +144,13 @@ class SignUpView extends StatelessWidget {
                                     "En continuant le processus, vous acceptez nos "),
                             TextSpan(
                                 style: linkStyle,
-                                text: "Conditions d'utilisations ",
+                                text: "conditions d'utilisations ",
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {}),
-                            TextSpan(style: textStyle, text: " et nos "),
+                            TextSpan(style: textStyle, text: " et notre "),
                             TextSpan(
                                 style: linkStyle,
-                                text: "Politiques de confidentialitées",
+                                text: "politique de confidentialité",
                                 recognizer: TapGestureRecognizer()
                                   ..onTap = () {}),
                             TextSpan(style: textStyle, text: " ."),
@@ -159,7 +159,7 @@ class SignUpView extends StatelessWidget {
                       ),
                       verticalSpaceLarge,
                       TextLink(
-                        'Vous avez déja un compte ? Connectez vous.',
+                        'Avez-vous déja un compte ? Connectez vous !',
                         style: TextStyle(
                             color: Colors.blueAccent,
                             fontWeight: FontWeight.w500),

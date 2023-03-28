@@ -38,10 +38,10 @@ class OrdersScreen extends StatelessWidget {
                 indicatorPadding: EdgeInsets.all(0),
                 tabs: [
                   Tab(
-                    child: _buildChip('A venir'),
+                    child: _buildChip('En cours'),
                   ),
                   Tab(
-                    child: _buildChip('Terminé'),
+                    child: _buildChip('Traitée'),
                   ),
                 ],
               ),

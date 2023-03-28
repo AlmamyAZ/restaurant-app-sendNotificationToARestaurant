@@ -33,7 +33,7 @@ class RestaurantsDisplayCollectionScreen extends StatelessWidget {
                         .showDialog(
                             title: 'Supression de ${collection.title}',
                             description:
-                                'Cette collection seras suprimée de maniere definitive. Voulez vous continuer ?',
+                                'Cette collection sera definitivement supprimée. Voulez-vous continuer ?',
                             cancelTitle: 'Annuler',
                             cancelTitleColor: Colors.red,
                             buttonTitle: 'Oui');
@@ -58,7 +58,7 @@ class RestaurantsDisplayCollectionScreen extends StatelessWidget {
                   color: Colors.grey[400],
                   size: 150,
                 ),
-                message: 'Rien à afficher pour le moment',
+                message: 'Rien à afficher pour le moment...',
               )
             : RestaurantsDisplayListCollection(
                 restaurantsIds: collection.restaurantIds!,

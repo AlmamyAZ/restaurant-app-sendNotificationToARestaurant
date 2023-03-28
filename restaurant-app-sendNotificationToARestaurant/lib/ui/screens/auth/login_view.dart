@@ -35,7 +35,7 @@ class LoginView extends StatelessWidget {
       },
       builder: (context, model, child) => BusyOverlay(
         show: model.busy(model.socialProfileLoading),
-        title: 'Profile en cours de chargement...',
+        title: 'Profil en cours de chargement...',
         child: Scaffold(
             appBar: AppBar(
               automaticallyImplyLeading: false,
@@ -171,7 +171,7 @@ class LoginView extends StatelessWidget {
                       ),
                       verticalSpaceLarge,
                       TextLink(
-                        'Créez un compte si vous êtes nouveaux.',
+                        'Veuillez créer un compte si vous êtes nouveau.',
                         style: TextStyle(
                             color: Colors.blueAccent,
                             fontWeight: FontWeight.w500),

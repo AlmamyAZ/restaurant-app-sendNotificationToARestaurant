@@ -81,7 +81,7 @@ const markAllNotificationsAsRead = async (data) => {
 };
 const orderStatuMessages = (status) => {
   if (status == OrderStatus.waitingRestaurantConfirmation) {
-    return "Votre commande est attente de confirmation";
+    return "Votre commande est en attente de confirmation";
   }
   if (status == OrderStatus.processingByRestaurant) {
     return "Votre commande a été acceptée";
@@ -90,21 +90,21 @@ const orderStatuMessages = (status) => {
     return "Votre commande est en cours de livraison";
   }
   if (status == OrderStatus.completed) {
-    return "Votre commande est prete pour la livraison";
+    return "Votre commande est prête pour la livraison";
   }
   if (status == OrderStatus.rejectedByRestaurant) {
-    return "Votre commande est refusee";
+    return "Votre commande a été refusée";
   }
   if (status == OrderStatus.canceledByUser) {
     return "Vous avez annuler votre commande";
   }
   if (status == OrderStatus.waitingForPickup) {
-    return "Votre commande est attente de confirmation";
+    return "Votre commande est en attente de confirmation";
   }
   if (status == OrderStatus.cooking) {
-    return "Votre commande est en cours de preparation";
+    return "Votre commande est en cours de préparation";
   }
-  return "Le statu de votre commande est inconnu.";
+  return "Le statut de votre commande est inconnu.";
 };
 
 const createNotification = (notification, userId) => {

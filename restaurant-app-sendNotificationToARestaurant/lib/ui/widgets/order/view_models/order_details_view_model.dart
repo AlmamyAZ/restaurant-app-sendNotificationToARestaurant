@@ -53,7 +53,7 @@ class OrderDetailsViewModel extends StreamViewModel {
     DialogResponse? response = await dialogService.showDialog(
       title: 'Annulation de la commande',
       description:
-          "l'annulation de la commande de maniere definitive. Voulez vous continuer ?",
+          "l'annulation de la commande sera définitive. Voulez-vous continuer ?",
       cancelTitle: 'Annuler',
       cancelTitleColor: Colors.red,
       buttonTitle: 'Oui',
@@ -107,11 +107,11 @@ class OrderDetailsViewModel extends StreamViewModel {
       case OrderStatus.waitingRestaurantConfirmation:
         return 'Votre commande est en attente de confirmation par ${selectedOrder!.restaurantName} !';
       case OrderStatus.processingByRestaurant:
-        return 'Votre commande est en cours de preparation par le restaurant !';
+        return 'Votre commande est en cours de préparation par le restaurant !';
       case OrderStatus.delivering:
         return 'Un de nos coursier est actuellement en route pour vous livrer !';
       case OrderStatus.waitingForPickup:
-        return 'Votre commande est prete et n\attend que vous pour etre degusté !';
+        return "Votre commande est prête et n'attend plus que vous pour être savourée !";
       case OrderStatus.completed:
         return '';
       case OrderStatus.rejectedByRestaurant:

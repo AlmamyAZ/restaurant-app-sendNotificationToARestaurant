@@ -20,7 +20,7 @@ class OrderNoteScreen extends StatelessWidget {
             appBar: AppBar(
               elevation: 0,
               title: Text(
-                'Laisser une note',
+                'Laissez une note',
                 style: Theme.of(context).textTheme.headline5?.copyWith(
                       color: Colors.white,
                     ),
@@ -39,11 +39,11 @@ class OrderNoteScreen extends StatelessWidget {
                         child: InputField(
                           maxLines: null,
                           maxLength: 150,
-                          placeholder: 'Vos specifications',
+                          placeholder: 'Vos spécifications',
                           controller: model.noteController,
                           validator: codeValidator,
                           additionalNote:
-                              '*Vous pouvez specifier ici les demandes ou precisions concernant votre commandes. Elles seront communiquées au restaurant.',
+                              '*Vous pouvez spécifier ici des demandes ou précisions concernant votre commande. Elles seront communiquées au restaurant.',
                         ),
                       ),
                       verticalSpaceMedium,

@@ -86,7 +86,7 @@ class WalletAccountView extends StatelessWidget {
                     DashboardItem(
                       onTap: model.gotoUserTransactionHistoryView,
                       icon: Icons.money_off_outlined,
-                      text: "Historique transactions",
+                      text: "Historique des transactions",
                     )
                   ],
                 ),

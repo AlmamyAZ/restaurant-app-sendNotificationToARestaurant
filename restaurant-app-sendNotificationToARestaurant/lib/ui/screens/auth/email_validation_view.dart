@@ -52,7 +52,7 @@ class _EmailValidationViewState extends State<EmailValidationView> {
                 width: screenWidth(context) -
                     screenWidthFraction(context, dividedBy: 4),
                 child: Text(
-                  'Pour activer votre compte cliquez sur le lien que nous vous avons envoyé par email',
+                  'Pour activer votre compte, veuillez cliquer sur le lien que nous vous avons envoyé par email',
                   style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.w300,
@@ -63,7 +63,7 @@ class _EmailValidationViewState extends State<EmailValidationView> {
               if (FirebaseAuth.instance.currentUser?.email != null &&
                   showSendValidationEmail)
                 TextLink(
-                  'Renvoyer l\'email de verification',
+                  "Renvoyer l'email de vérification",
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
                     fontSize: 14,

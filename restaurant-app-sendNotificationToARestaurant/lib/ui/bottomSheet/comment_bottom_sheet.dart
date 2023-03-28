@@ -80,7 +80,7 @@ class _CommentBottomSheetState extends State<CommentBottomSheet> {
               DialogResponse? response = await dialogService.showDialog(
                 title: 'Supression du commentaire',
                 description:
-                    'la suppression sera de maniere definitive. Voulez vous continuer ?',
+                    'La suppression sera définitive. Voulez-vous continuer ?',
                 cancelTitle: 'Annuler',
                 cancelTitleColor: Colors.red,
                 buttonTitle: 'Oui',

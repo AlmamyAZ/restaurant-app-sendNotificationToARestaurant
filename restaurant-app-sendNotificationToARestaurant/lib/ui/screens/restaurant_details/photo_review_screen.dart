@@ -55,7 +55,7 @@ class PhotoReviewScreen extends StatelessWidget {
                   builder: (BuildContext context) {
                     return AlertDialog(
                       title: Text(
-                        "Voulez vous quitter ?",
+                        "Voulez-vous quitter ?",
                       ),
                       content:
                           Text("Toutes vos modifications seront supprimées"),
@@ -136,7 +136,7 @@ class PhotoReviewScreen extends StatelessWidget {
                       : Padding(
                           padding: EdgeInsets.only(top: 10),
                           child: Text(
-                            'l\'image depasse 3MB, veuillez choisir une autre image',
+                            "l'image depasse 3MB, veuillez choisir une autre image",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               color: Colors.red,
@@ -186,7 +186,7 @@ class ChipList extends ViewModelWidget<PhotoManagementViewModel> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'A propos de quoi',
+            'À propos de',
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
           Container(
@@ -201,7 +201,7 @@ class ChipList extends ViewModelWidget<PhotoManagementViewModel> {
                   idx: 0,
                 ),
                 FilterElement(
-                  label: 'Etablissement',
+                  label: 'Établissement',
                   setIndexHandler: model.setSelectedIndex,
                   selectedIndex: model.selectedIndex,
                   idx: 1,

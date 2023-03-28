@@ -26,7 +26,7 @@ class UserInfoMobileVerificationView extends StatelessWidget {
       builder: (context, model, child) => Scaffold(
           appBar: AppBar(
             title: Text(
-              'Code de verification',
+              'Code de vérification',
               style: Theme.of(context).appBarTheme.toolbarTextStyle,
             ),
           ),
@@ -44,7 +44,7 @@ class UserInfoMobileVerificationView extends StatelessWidget {
                   children: <Widget>[
                     verticalSpaceMedium,
                     Text(
-                      'Nous vous avons envoyer un code de verification au +224 ${model.phoneController.text}',
+                      'Nous vous avons envoyé un code de vérification au +224 ${model.phoneController.text}',
                       style: TextStyle(
                         fontSize: 18,
                         fontWeight: FontWeight.w500,
@@ -52,7 +52,7 @@ class UserInfoMobileVerificationView extends StatelessWidget {
                     ),
                     verticalSpaceMedium,
                     InputField(
-                      placeholder: 'Code de verification',
+                      placeholder: 'Code de vérification',
                       textInputType: TextInputType.phone,
                       controller: model.verificationCodeController,
                       fieldFocusNode: phoneFocusNode,
@@ -83,7 +83,7 @@ class UserInfoMobileVerificationView extends StatelessWidget {
                       // mainAxisAlignment: MainAxisAlignment.center,
                       children: [
                         BusyButton(
-                          title: 'Verifier',
+                          title: 'Vérifier',
                           busy: model.isBusy,
                           onPressed: () {
                             if (_formKey.currentState!.validate()) {

@@ -21,7 +21,7 @@ class CommercialsList extends ViewModelWidget<HomeViewModel> {
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 10),
             child: Text(
-              'Quoi de neuf ?',
+              'Les Tendances!',
               style: Theme.of(context).textTheme.headline5,
             ),
           ),

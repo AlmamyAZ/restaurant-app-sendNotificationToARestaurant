@@ -209,7 +209,7 @@ class RestaurantReviewsScreen
                     color: Colors.white,
                   ),
                   label: Text(
-                    'Ecrire un avis',
+                    'Écrire un avis',
                     style: TextStyle(color: Colors.white),
                   ),
                 )

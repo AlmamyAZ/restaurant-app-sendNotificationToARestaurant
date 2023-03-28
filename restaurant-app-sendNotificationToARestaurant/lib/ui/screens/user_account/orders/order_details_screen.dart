@@ -178,7 +178,7 @@ class OrderRecapSection extends StatelessWidget {
         ...order.products!
             .map((e) => buildListTile(e, context, order))
             .toList(),
-        buildRowDetailPrice('Soustotal', order.subTotal!, bold: true),
+        buildRowDetailPrice('Sous total', order.subTotal!, bold: true),
         buildRowDetailPrice('Frais de livraison', 20000),
         buildRowDetailPrice('Frais de service', 2000),
       ]),
@@ -281,7 +281,7 @@ class BillSection extends StatelessWidget {
           ),
           verticalSpaceSmall,
           Text(
-            "Un prelevement temporaire de ${formatCurrency(order.total)} a été effectué sur votre moyen de paiement (627 47 16 55). Ce motant vous seras reelement facturé seulement apres acceptation de votre commande par le restaurant. Dans le cas d'un rejet du restaurant ou d'une annulation de votre part avant le debut de la preparation de la commande par le restaurant, le montant vous seras remboursee au complet.",
+            "Un prélèvement temporaire de ${formatCurrency(order.total)} a été effectué sur votre compte (627 47 16 55). Ce motant vous sera facturé seulement après acceptation de votre commande par le restaurant. Dans le cas d'un rejet du restaurant ou d'une annulation de votre part avant le début de la préparation de la commande par le restaurant, le montant vous sera remboursé en totalité, cependant les frais de services ne seront pas remboursés.",
             style: TextStyle(fontSize: 12),
           )
         ],

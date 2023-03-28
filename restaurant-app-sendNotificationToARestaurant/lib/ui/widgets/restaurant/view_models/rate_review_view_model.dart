@@ -33,7 +33,7 @@ class RateReviewViewModel extends BaseViewModel {
     _selectedIndex = subjet.indexOf(review.subject);
   }
 
-  List subjet = ['Personnel', 'Etablissement', 'Nourriture'];
+  List subjet = ['Personnel', 'Établissement', 'Nourriture'];
 
   List<XFile> _images = [];
   List<XFile> get images => _images;
@@ -114,7 +114,7 @@ class RateReviewViewModel extends BaseViewModel {
 
       navigationService.back(result: {'refreshData': true});
       snackbarService.showSnackbar(
-        message: 'votre commentaire  a eté bien modifié',
+        message: 'votre commentaire  a été modifié',
         title: 'Succès',
       );
     } catch (e) {
@@ -172,7 +172,7 @@ class RateReviewViewModel extends BaseViewModel {
 
       navigationService.back(result: {'refreshData': true});
       snackbarService.showSnackbar(
-        message: 'votre commentaire  a eté bien ajouté',
+        message: 'votre commentaire  a été ajouté',
         title: 'Succès',
       );
     } catch (e) {
@@ -180,7 +180,7 @@ class RateReviewViewModel extends BaseViewModel {
       isLoading = false;
       setBusy(false);
       snackbarService.showSnackbar(
-        message: 'une erreur s\'est produite',
+        message: "une erreur s'est produite",
         title: 'Erreur',
       );
     }

@@ -52,7 +52,7 @@ class _OnBoardingPageState extends State<OnBoardingPage> {
         PageViewModel(
           title: "Bienvenue sur Eat 224 !",
           body:
-              "Nous sommes heureux de vous rencontrer! Pour commencer, decouvrons ensemble ce qu'est Eat 224",
+              "Nous sommes heureux de vous compter parmi nous! Pour commencer, découvrons ensemble ce qu'est Eat 224",
           image: _buildImage('3'),
           decoration: pageDecoration,
         ),

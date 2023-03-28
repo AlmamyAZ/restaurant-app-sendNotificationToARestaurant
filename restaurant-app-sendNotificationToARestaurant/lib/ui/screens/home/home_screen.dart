@@ -51,7 +51,7 @@ class HomeScreen extends StatelessWidget {
                 FoodCategories(),
                 SponsoredRestaurants(),
                 SectionTitle(
-                  title: 'Espace Decouverte',
+                  title: 'Espace Découverte',
                   styled: true,
                 )
               ],
@@ -64,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.all(10),
                   child: FullFlatButton(
-                    title: 'Decouvrez plus de plats',
+                    title: 'Découvrez plus de plats',
                     color: primaryColorLight,
                     textColor: primaryColor,
                     onPress: () {
