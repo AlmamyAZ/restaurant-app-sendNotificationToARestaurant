@@ -55,7 +55,7 @@ class _MyAppState extends State<MyApp> {
   bool _initialized = false;
   bool _error = false;
 
-  // Define an async function to initialize FlutterFire
+  // Define an async function to initialize FlutterFire here
   void initializeFlutterFire() async {
     try {
       // Wait for Firebase to initialize and set `_initialized` state to true
